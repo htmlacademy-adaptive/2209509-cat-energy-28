@@ -1,7 +1,3 @@
-.about__list {
-  list-style: none;
-}
-
 .programmes__item {
   background-color: #f2f2f2;
   padding: 41px;
@@ -23,3 +19,40 @@
   text-transform: uppercase;
   border: none;
 }
+
+@media screen and (min-width: 320px) {
+  .programmes {
+    margin-inline: @mobile-size;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .programmes {
+    margin-inline: @tablet-size;
+  }
+
+  .programmes__description-title {
+    font-size: 36px;
+  }
+
+  .programmes__description-text {
+    font-size: 16px;
+  }
+
+  .programmes__description-button {
+    font-size: 20px;
+  }
+
+  .programmes__item {
+    margin-block: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .programmes {
+    display: flex;
+    gap: 40px;
+    margin-inline: @desktop-size;
+  }
+}
+

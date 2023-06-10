@@ -1,4 +1,4 @@
-.contacts__about-title {
+.contacts__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -28,4 +28,21 @@
   line-height: 30px;
   color: #444444;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts-block__input {
+    width: 467px;
+  }
 }

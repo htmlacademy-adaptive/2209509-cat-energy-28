@@ -29,3 +29,33 @@
   color: #444444;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 320px) {
+  .form {
+    margin-inline: @mobile-size;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    margin-inline: @tablet-size;
+  }
+
+  .form__about-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form {
+    margin-inline: @desktop-size;
+  }
+
+  .form-block__input {
+    min-width: 509px;
+  }
+
+  .form__about-description {
+    font-size: 20px;
+  }
+}
