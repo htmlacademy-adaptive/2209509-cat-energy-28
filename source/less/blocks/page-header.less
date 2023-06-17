@@ -1,8 +1,6 @@
 .page-header__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 60px;
+  font-family: @oswald;
+  line-height: 70px;
 }
 
 .page-header__menu-list {
@@ -10,18 +8,36 @@
 }
 
 .page-header__menu-link {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-family: @oswald;
+  text-transform: uppercase;
+}
+
+.page-header__subtitle {
+  font-family: @oswald;
   text-transform: uppercase;
 }
 
 .page-header__logo-text {
-  font-family: "Oswald", sans-serif;
+  font-family: @oswald;
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
+}
+
+.page-header__button {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  width: 244px;
+  height: 54px;
+  background-color: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 14px 26px;
 }
 
 @media screen and (min-width: 320px) {
@@ -63,21 +79,16 @@
     position: relative;
   }
 
-  .page-header__intro {
-    margin-inline: @tablet-size;
-  }
-
   .page-header__title {
     font-size: 60px;
   }
 
-  .page-header__logo {
-    display: block;
-    margin-inline: @tablet-size;
-  }
-
   .page-header__subtitle {
     font-size: 20px;
+  }
+
+  .page-header__navigation {
+    display: flex;
   }
 
   .page-header__logo-text {
@@ -87,26 +98,38 @@
   .page-header__menu-list {
     display: flex;
     justify-content: flex-end;
+    gap: 35px;
   }
 
   .page-header__menu-item {
-    margin-left: 35px;
     padding: 0;
     border: none;
   }
 
   .page-header__menu-link {
     font-size: 18px;
+    color: #000000;
   }
 
   .page-header__description {
     position: absolute;
   }
+
+  .page-header__container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  .page-header__menu {
-    margin-inline: @desktop-size;
+  .page-header {
+    margin-bottom: 82px;
+  }
+
+  .page-header__navigation {
+    display: flex;
+    gap: 350px;
+    margin-bottom: 72px;
   }
 
   .page-header__intro {
@@ -114,11 +137,54 @@
     margin-inline: @desktop-size;
   }
 
+  .page-header__title {
+    margin: 0;
+  }
+
   .page-header__description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     position: static;
+    width: 470px;
   }
 
   .page-header__logo {
     margin-inline: @desktop-size;
+  }
+
+  .page-header__menu-link {
+    color: #ffffff;
+  }
+
+  .page-header__menu-link--current::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 68px;
+    height: 2px;
+    top: 6px;
+    background-color: #ffffff;
+  }
+
+  .page-header--preview::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    top: 0;
+    right: 0;
+    min-height: 696px;
+    background: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-bg-desktop.png");
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #63a73a;
+    z-index: -1;
+  }
+
+  .page-header__container {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
