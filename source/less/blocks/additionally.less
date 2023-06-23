@@ -16,11 +16,14 @@
 
 .additionally__products-text {
   color: #444444;
+  font-family: @lato;
 }
 
 .additionally__gift {
-  background-color: rgba(104, 183, 56, 0.85);
-  width: 245px;
+  background: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/gift-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .additionally__products-button {
@@ -29,15 +32,51 @@
   color: #ffffff;
   background-color: #68b738;
   padding: 7px 53px;
+  text-transform: uppercase;
 }
 
 .additionally__gift-decription {
   color: #ffffff;
+  font-family: @lato;
 }
 
 @media screen and (min-width: 320px) {
   .additionally__title {
     font-size: 36px;
+  }
+
+  .additionally__gift {
+    min-height: 290px;
+    width: 280px;
+  }
+
+  .additionally__gift-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .additionally__products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .additionally__products-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additionally__products-item {
+    border-top: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additionally__products-button {
+    text-align: center;
   }
 }
 
@@ -46,8 +85,31 @@
     margin-inline: @tablet-size;
   }
 
+  .additionally__gift {
+    min-height: 200px;
+    width: 707px;
+  }
+
+  .additionally__gift-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    padding: 50px;
+  }
+
   .additionally__title {
     font-size: 36px;
+  }
+
+  .additionally__products-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 40px;
+  }
+
+  .additionally__gift-decription {
+    width: 160px;
   }
 }
 
@@ -55,5 +117,46 @@
   .additionally__wrapper {
     display: flex;
     gap: 80px;
+  }
+
+  .additionally__gift-icon {
+    margin-bottom: 30px;
+  }
+
+  .additionally__gift-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .additionally__gift {
+    min-height: 288px;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 45px;
+  }
+
+  .additionally__products-list {
+    width: 100%;
+  }
+
+  .additionally__products-item {
+    border-top: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .additionally__products-button {
+    width: 244px;
+    min-height: 40px;
+  }
+
+  .additionally__products-text {
+    gap: 150px;
   }
 }

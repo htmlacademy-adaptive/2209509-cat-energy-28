@@ -5,9 +5,11 @@
 
 .about__title {
   font-family: @oswald;
+  font-weight: 400;
 }
 
 .about__description {
+  font-family: @lato;
   color: #444444;
 }
 
@@ -45,16 +47,22 @@
     display: grid;
     gap: 0;
   }
+
+  .about__icon-img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .about {
     margin-inline: @desktop-size;
+    margin-bottom: 200px;
   }
 
   .about__list {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

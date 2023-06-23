@@ -15,10 +15,66 @@
   width: 100%;
 }
 
+.map__window--grey {
+  background-color: #f2f2f2;
+}
+
+@media screen and (min-width: 320px) {
+  .map__window-wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .map__window-content {
+    min-height: 112px;
+    background-color: #ffffff;
+    padding: 20px 26px;
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map__window-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .map__window-content {
+    min-height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 300px;
+    padding: 56px 80px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .map__window {
+    padding: @desktop-size;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  .map__window-wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .map__window-content {
+    position: absolute;
     display: flex;
+    gap: 70px;
+    padding: 56px 80px;
     width: 565px;
     min-height: 198px;
+    background-color: #ffffff;
+  }
+
+  .map__adress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

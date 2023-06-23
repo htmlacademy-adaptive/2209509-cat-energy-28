@@ -21,16 +21,42 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .contacts__title {
     font-size: 36px;
+  }
+
+  .contacts-block {
+    display: grid;
+    gap: 20px;
+  }
+
+  .contacts-block__input--imail {
+    background-image: url("../img/email.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .contacts-block__input--tel {
+    background-image: url("../img/phone.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .contacts-block__field {
+    display: flex;
+    gap: 20px;
+  }
+
+  .contacts-block__input {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .contacts__block {
+  .contacts-block {
     display: flex;
-    flex-direction: row;
+    gap: 78px;
   }
 
   .contacts-block__input {
