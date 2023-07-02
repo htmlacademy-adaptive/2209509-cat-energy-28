@@ -40,9 +40,31 @@
   font-family: @lato;
 }
 
+.additionally__title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 @media screen and (min-width: 320px) {
+  .additionally {
+    margin-inline: @mobile-size;
+  }
+
   .additionally__title {
-    font-size: 36px;
+    font-size: 24px;
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .additionally__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    height: 3px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
   }
 
   .additionally__gift {
@@ -56,23 +78,26 @@
     gap: 50px;
     text-align: center;
     padding: 50px;
+    margin-top: 40px;
   }
 
   .additionally__products-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .additionally__products-text {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
   }
 
   .additionally__products-item {
     border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
     display: flex;
     flex-direction: column;
+    padding-block: 15px;
   }
 
   .additionally__products-button {
@@ -99,24 +124,44 @@
 
   .additionally__title {
     font-size: 36px;
+    padding-inline: 30px;
+  }
+
+  .additionally__products-title {
+    font-size: 20px;
   }
 
   .additionally__products-text {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    gap: 40px;
+    align-items: center;
+  }
+
+  .additionally__products-item {
+    border: 1px solid #cdcdcd;
+    padding-inline: 35px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 85px;
   }
 
   .additionally__gift-decription {
     width: 160px;
   }
+
+  .additionally__products-button {
+    grid-column: 1/-1;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .additionally {
+    margin-inline: @desktop-size;
+  }
+
   .additionally__wrapper {
     display: flex;
     gap: 80px;
+    margin-bottom: 85px;
   }
 
   .additionally__gift-icon {
@@ -145,18 +190,20 @@
 
   .additionally__products-item {
     border-top: 1px solid #cdcdcd;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    border-inline: none;
+    display: grid;
+    grid-template-columns: 1fr 230px 66px 244px;
     width: 100%;
+    padding-inline: 0;
   }
 
   .additionally__products-button {
     width: 244px;
     min-height: 40px;
+    grid-column: auto;
   }
 
   .additionally__products-text {
-    gap: 150px;
+    margin: 0;
   }
 }

@@ -1,5 +1,12 @@
 .review__title {
   font-family: @oswald;
+  background-color: #ffffff;
+  padding-inline: 40px;
+}
+
+.review__title-wrapper {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .review-block__input {
@@ -14,6 +21,17 @@
 @media screen and (min-width: 320px) {
   .review-block__input {
     min-height: 150px;
+  }
+
+  .review__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    height: 3px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
   }
 }
 

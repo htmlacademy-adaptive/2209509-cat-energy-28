@@ -10,10 +10,26 @@
 }
 
 .programs__button {
+  position: relative;
   font-family: @oswald;
   text-transform: uppercase;
   color: #000000;
   border: none;
+  width: 140px;
+}
+
+.programs__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 37px;
+  height: 12px;
+  background: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+  z-index: 200;
+  transition: 0.3s;
 }
 
 .programs__text {
@@ -31,6 +47,11 @@
   .programs__icon {
     display: flex;
     gap: 10px;
+  }
+
+  .programs__button::after {
+    content: "";
+    right: -48px;
   }
 }
 
@@ -52,13 +73,19 @@
   }
 
   .programs__item {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     margin-block: 30px;
   }
 
   .programs__icon-img {
     width: 200px;
     height: 211px;
+  }
+
+  .programs__button::after {
+    content: "";
+    right: -28px;
   }
 }
 
@@ -68,6 +95,10 @@
     gap: 40px;
     flex-direction: row;
     margin-inline: @desktop-size;
+  }
+
+  .programs__item {
+    width: 570px;
   }
 
   .programs__icon {

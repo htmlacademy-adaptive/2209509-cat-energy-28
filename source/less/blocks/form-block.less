@@ -22,6 +22,18 @@
   text-transform: uppercase;
 }
 
+.form-block__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form-block__input:focus {
+  border: 1px solid #444444;
+}
+
+.form-block__input:invalid {
+  border: 1px solid #FF8282;
+}
+
 @media screen and (min-width: 320px) {
   .form {
     margin-inline: @mobile-size;
@@ -55,6 +67,7 @@
 @media screen and (min-width: 1440px) {
   .form {
     margin-inline: @desktop-size;
+    margin-top: 5px;
   }
 
   .form__about-description {

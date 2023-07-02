@@ -19,9 +19,62 @@
   background-position: center;
 }
 
+.input-block__check:hover {
+  border: 1px solid #bababa;
+}
+
+.input-block__label:active {
+  opacity: 0.3;
+}
+
 @media screen and (min-width: 320px) {
   .input-block__field {
     display: grid;
     gap: 13px;
+  }
+
+  .input-block::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #d9d9d9;
+  }
+
+  .input-block::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #d9d9d9;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input-block {
+    border: 1px solid #d9d9d9;
+  }
+
+  .input-block::before {
+    content: "";
+    display: none;
+  }
+
+  .input-block::after {
+    content: "";
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input-block {
+    width: 568px;
+    min-height: 200px;
+  }
+
+  .input-block__field {
+    padding: 25px;
   }
 }

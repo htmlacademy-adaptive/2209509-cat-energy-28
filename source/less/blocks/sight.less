@@ -1,5 +1,12 @@
 .sight__title {
   font-family: @oswald;
+  background-color: #ffffff;
+  padding-inline: 40px;
+}
+
+.sight__title-wrapper {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .sight__label {
@@ -9,6 +16,7 @@
 
 .sight__necessarily {
   font-style: normal;
+  font-family: @lato;
 }
 
 .sight__check {
@@ -26,6 +34,26 @@
   background-position: center;
 }
 
+.sight__button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  background-color: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sight__check:hover {
+  border: 1px solid #bababa;
+}
+
+.sight__label:active {
+  opacity: 0.3;
+}
+
 @media screen and (min-width: 320px) {
   .sight__field {
     display: grid;
@@ -35,6 +63,17 @@
   .sight__button {
     width: 280px;
     min-height: 40px;
+  }
+
+  .sight__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    height: 3px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
   }
 }
 
@@ -57,6 +96,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .sight__block {
+    margin-bottom: 82px;
+  }
+
   .sight__field {
     display: flex;
     gap: 100px;
