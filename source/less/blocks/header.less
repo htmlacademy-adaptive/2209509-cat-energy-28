@@ -47,7 +47,7 @@
   }
 
   .header__menu-item {
-    padding-block: 22px;
+    padding-block: 17px;
     border-block: 1px solid #e6e6e6;
   }
 
@@ -60,6 +60,11 @@
   .header__menu-list {
     text-align: center;
     padding: 0;
+    margin: 0;
+  }
+
+  .form__about-description {
+    font-size: 14px;
   }
 }
 
@@ -84,6 +89,7 @@
 
   .header__menu-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
   }
 
@@ -94,13 +100,19 @@
 
   .header__menu-link {
     font-size: 18px;
+    padding-bottom: 5px;
   }
 
   .header__container {
     max-width: 768px;
     display: flex;
+    align-items: center;
     gap: 95px;
     margin: 0 auto;
+  }
+
+  .header__menu-link--current {
+    border-bottom: 2px solid #68b738;
   }
 }
 
@@ -109,6 +121,18 @@
     max-width: 1440px;
     padding-top: 55px;
     display: flex;
-    gap: 520px;
+    gap: 535px;
+  }
+
+  .header__logo {
+    position: relative;
+  }
+
+  .header__menu-list {
+    gap: 35px;
+  }
+
+  .header__menu-link {
+    font-size: 20px;
   }
 }

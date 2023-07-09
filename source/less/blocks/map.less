@@ -30,9 +30,24 @@
   .map__window-content {
     min-height: 112px;
     background-color: #ffffff;
-    padding: 20px 26px;
+    padding: 25px 20px;
     display: flex;
-    gap: 5px;
+    gap: 15px;
+  }
+
+  .map__invitation {
+    font-size: 16px;
+    line-height: 20px;
+    width: 300px;
+  }
+
+  .map__adress {
+    font-size: 14px;
+    color: #444444;
+  }
+
+  .map__frame {
+    height: 362px;
   }
 }
 
@@ -46,14 +61,31 @@
     min-height: 200px;
     background-color: #ffffff;
     display: flex;
-    gap: 300px;
-    padding: 56px 80px;
+    gap: 250px;
+    padding: 55px 70px 50px 70px;
+  }
+
+  .map__invitation {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .map__adress {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+  }
+
+  .map__frame {
+    height: 400px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .map__window {
-    padding: @desktop-size;
+    padding: 95px;
     margin: 0 auto;
     position: absolute;
   }
@@ -61,22 +93,27 @@
   .map__window-wrapper {
     position: relative;
     max-width: 1440px;
-    margin: 0 auto;
+    padding-inline: 200px;
   }
 
   .map__window-content {
     position: absolute;
     display: flex;
-    gap: 70px;
-    padding: 56px 80px;
+    gap: 43px;
+    padding: 56px 80px 40px 80px;
     width: 565px;
     min-height: 198px;
     background-color: #ffffff;
+  }
+
+  .map__invitation {
+    width: 330px;
   }
 
   .map__adress {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: left;
   }
 }
