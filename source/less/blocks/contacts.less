@@ -50,13 +50,21 @@
 }
 
 @media screen and (min-width: 320px) {
+  .contacts__title-wrapper {
+    width: 215px;
+  }
+
   .contacts__title {
     font-size: 24px;
     line-height: 26px;
     font-weight: 400;
+    background-color: #ffffff;
+    padding-inline: 30px;
+    margin-left: -30px;
   }
 
   .contacts-block__label {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,16 +78,19 @@
   }
 
   .contacts-block__input--imail {
-    background-image: url("../img/email.svg");
     background-position: right;
     background-repeat: no-repeat;
     padding-right: 30px;
   }
 
   .contacts-block__input--tel {
-    background-image: url("../img/phone.svg");
     background-position: right;
     background-repeat: no-repeat;
+  }
+
+  .contacts-block__input-svg {
+    position: absolute;
+    right: 20px;
   }
 
   .contacts-block__field {
@@ -145,9 +156,5 @@
   .contacts-block {
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
-  }
-
-  .contacts-block__input {
-    width: 486px;
   }
 }
