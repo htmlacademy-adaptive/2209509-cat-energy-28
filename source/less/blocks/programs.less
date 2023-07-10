@@ -20,15 +20,22 @@
 .programs__button::after {
   content: "";
   position: absolute;
+  left: 100%;
   top: 50%;
-  width: 37px;
-  height: 12px;
-  background: url("../img/icon-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   transform: translateY(-50%);
-  z-index: 200;
-  transition: 0.3s;
+  width: 25px;
+  height: 12px;
+  background: url("../img/icon-arrow.svg") no-repeat;
+}
+
+.programs__button:hover::after {
+  content: "";
+  width: 34px;
+  background: url("../img/arrow-click.svg") no-repeat;
+}
+
+.programs__button:active {
+  opacity: 0.3;
 }
 
 .programs__text {
@@ -98,6 +105,7 @@
     color: #111111;
     text-decoration: none;
     vertical-align: baseline;
+    width: 100px;
   }
 
   .programs__button::after {
@@ -139,7 +147,7 @@
 
   .programs__text {
     width: 340px;
-    margin-bottom: 57px;
+    margin-bottom: 56px;
     margin-left: 55px;
     font-size: 16px;
     line-height: 24px;
@@ -152,6 +160,7 @@
     margin-left: 55px;
     font-size: 20px;
     line-height: 20px;
+    width: 130px;
   }
 
   .programs__icon-img {
@@ -161,7 +170,7 @@
 
   .programs__button::after {
     content: "";
-    right: -28px;
+    right: -18px;
   }
 }
 
