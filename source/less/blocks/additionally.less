@@ -26,6 +26,12 @@
   background-size: cover;
 }
 
+@media (min-resolution: 2dpi) {
+  .additionally__gift {
+    background: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/gift-bg.jpg");
+  }
+}
+
 .additionally__products-button {
   font-family: @oswald;
   font-size: 16px;
@@ -121,7 +127,19 @@
 @media screen and (min-width: 768px) {
   .additionally {
     margin-inline: @tablet-size;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
+  }
+
+  .additionally__title {
+    font-size: 36px;
+    padding-inline: 35px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 10px;
+  }
+
+  .additionally__title::after {
+    margin-top: 23px;
   }
 
   .additionally__gift {
@@ -129,8 +147,12 @@
     width: 707px;
   }
 
+  .additionally__gift-text {
+    display: flex;
+  }
+
   .additionally__products-list {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .additionally__gift-wrapper {
@@ -145,11 +167,6 @@
   .additionally__gift-decription {
     text-align: left;
     width: 160px;
-  }
-
-  .additionally__title {
-    font-size: 36px;
-    padding-inline: 30px;
   }
 
   .additionally__products-title {
@@ -189,7 +206,7 @@
   }
 
   .additionally__wrapper {
-    margin-top: 70px;
+    margin-top: 76px;
     display: grid;
     grid-template-columns: 897px 247px;
     gap: 80px;

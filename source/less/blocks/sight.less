@@ -70,10 +70,16 @@
     margin-bottom: 35px;
   }
 
+  .sight__title {
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+
   .sight__field {
     display: grid;
     gap: 13px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 33px;
   }
 
@@ -113,7 +119,7 @@
 
 @media screen and (min-width: 768px) {
   .sight {
-    margin-bottom: 78px;
+    margin-bottom: 70px;
   }
 
   .sight__title {
@@ -162,7 +168,7 @@
 
   .sight__title::after {
     content: "";
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -172,9 +178,9 @@
   }
 
   .sight__field {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 221px);
+    column-gap: 104px;
     margin-top: 27px;
     margin-bottom: 60px;
   }
