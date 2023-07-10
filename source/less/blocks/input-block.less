@@ -1,0 +1,86 @@
+.input-block__label {
+  font-family: @oswald;
+  text-transform: uppercase;
+}
+
+.input-block__check {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input-block__radio:checked + .input-block__check {
+  background-image: url("../img/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-block__check:hover {
+  border: 1px solid #bababa;
+}
+
+.input-block__label:active {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 320px) {
+  .input-block {
+    padding-block: 18px;
+    margin-bottom: 5px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .input-block__field {
+    display: grid;
+    gap: 15px;
+  }
+
+  .input-block__check {
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .input-block__label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input-block {
+    border: 1px solid #d9d9d9;
+    padding: 23px 25px;
+    margin-bottom: 50px;
+  }
+
+  .input-block__check {
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .input-block__field {
+    gap: 13px;
+  }
+
+  .input-block__label {
+    font-size: 20px;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input-block {
+    width: 568px;
+    min-height: 200px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .input-block__field {
+    padding: 25px;
+  }
+}

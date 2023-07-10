@@ -1,0 +1,344 @@
+.example__slider-switch:hover {
+  border-color: #68b738;
+  background-color: #ffffff;
+}
+
+.example__slider-switch:hover::before {
+  background-color: #68b738;
+}
+
+.example__slider-switch:hover::after {
+  background-color: #68b738;
+}
+
+.example__slider-switch:active {
+  opacity: 0.8;
+}
+
+.example__slider-switch:active::before {
+  opacity: 0.8;
+}
+
+.example__slider-switch:active::after {
+  opacity: 0.8;
+}
+
+.example__slider-switch-arrow {
+  fill: #666666;
+}
+
+.example__slider-switch-arrow:hover {
+  fill: #68b738;
+}
+
+.example__slider-switch-arrow:active {
+
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 320px) {
+  .example {
+    background-image: linear-gradient(#ffffff -200px, #f2f2f2 50px);
+  }
+
+  .example__container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 25px 20px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .example__description-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .example__description-text {
+    font-family: @lato;
+    font-size: 14px;
+    color: #444444;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  .example__comparison {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .example__comparison-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 0 34px;
+  }
+
+  .example__comparison-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 124px;
+    padding: 14px 20px 14px 20px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .example__comparison-stats {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .example__comparison-text {
+    position: absolute;
+    font-family: @lato;
+    font-size: 12px;
+    color: #444444;
+    background-color: #eaeaea;
+    padding-inline: 10px;
+    margin-right: 20px;
+    top: 45px;
+  }
+
+  .example__count {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .example__count-description {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .example__slider {
+    position: relative;
+    min-height: 256px;
+  }
+
+  .example__slider-fat {
+    position: absolute;
+    clip-path: inset(0 50% 0 0);
+    z-index: 1;
+  }
+
+  .example__slider-slim {
+    position: absolute;
+    clip-path: inset(0 0 0 50%);
+  }
+
+  .example__slider-switch::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 103px;
+    border: none;
+    background-color: #666666;
+    left: 15px;
+    top: -105px;
+    border-radius: 2px 2px 0 0;
+    padding: 0;
+    z-index: -200;
+  }
+
+  .example__slider-switch::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 103px;
+    border: none;
+    background-color: #666666;
+    left: 15px;
+    top: 35px;
+    border-radius: 2px 2px 0 0;
+    padding: 0;
+    z-index: -200;
+  }
+
+  .example__slider-switch {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-19px) translateY(105px);
+    cursor: pointer;
+    z-index: 200;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .example {
+    background-image: linear-gradient(#ffffff 690px, #f2f2f2 50px);
+  }
+
+  .example__container {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 103px 30px 160px;
+  }
+
+  .example__description-title {
+    font-size: 60px;
+  }
+
+  .example__description-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 75px;
+  }
+
+  .example__comparison {
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .example__comparison-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+  }
+
+  .example__comparison-item {
+    width: 162px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .example__comparison-stats {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .example__comparison-text {
+    top: 60px;
+    font-size: 14px;
+    padding-inline: 0 5px;
+    margin: 0;
+  }
+
+  .example__count-description {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .example__count-value {
+    display: block;
+  }
+
+  .example__slider {
+    position: relative;
+    min-height: 500px;
+    top: 45px;
+    left: 75px;
+  }
+
+  .example__slider-switch::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 233px;
+    border: none;
+    background-color: #666666;
+    left: 15px;
+    top: -235px;
+    border-radius: 2px 2px 0 0;
+    padding: 0;
+    z-index: -200;
+  }
+
+  .example__slider-switch::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 240px;
+    border: none;
+    background-color: #666666;
+    left: 15px;
+    top: 35px;
+    border-radius: 2px 2px 0 0;
+    padding: 0;
+    z-index: -200;
+  }
+
+  .example__slider-switch {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    left: 280px;
+    top: 130px;
+    transform: translateX(-19px) translateY(105px);
+    cursor: pointer;
+    z-index: 200;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .example {
+    background-image: linear-gradient(#ffffff 200px, #f2f2f2 50px);
+  }
+
+  .example__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 30px 110px;
+  }
+
+  .example__description {
+    width: 435px;
+  }
+
+  .example__description-text {
+    position: relative;
+    top: 85px;
+  }
+
+  .example__comparison {
+    position: relative;
+    top: 100px;
+  }
+
+  .example__comparison-text {
+    top: 65px;
+  }
+
+  .example__count-description {
+    display: flex;
+    gap: 65px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .example__count-value {
+    display: inline;
+  }
+
+  .example__slider {
+    width: 600px;
+    left: 205px;
+    top: 10px;
+  }
+}

@@ -1,0 +1,146 @@
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer__socials-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__socials-icon {
+  fill: #666666;
+}
+
+.footer__socials-icon:hover {
+  fill: #68b738;
+}
+
+.footer__socials-icon:active {
+  opacity: 0.3;
+}
+
+.html-academy__link {
+  color: #444444;
+}
+
+.html-academy__logo-svg {
+  fill: #444444;
+}
+
+.html-academy__logo-svg:hover {
+  fill: #68b738;
+}
+
+.html-academy__logo-svg:active {
+  fill: #68b738;
+}
+
+.html-academy:active {
+  opacity: 0.3;
+}
+
+.footer__logo:hover {
+  opacity: 0.7;
+}
+
+.footer__logo:active {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 320px) {
+  .footer__container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-block: 35px;
+  }
+
+  .footer__socials {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 13px;
+  }
+
+  .footer__socials-list {
+    display: grid;
+    grid-auto-rows: 40px;
+    grid-auto-columns: 40px;
+    grid-template-columns: repeat(3, 40px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-block: 15px;
+  }
+
+  .footer__socials-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .html-academy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__container {
+    max-width: 768px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 170px 1fr 170px;
+    gap: 50px;
+    align-items: center;
+    padding-block: 30px 20px;
+  }
+
+  .footer__socials {
+    border: none;
+    padding: 0;
+  }
+
+  .footer__socials-list {
+    width: 300px;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .html-academy {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: -5px;
+  }
+
+  .html-academy__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__container {
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 300px;
+    padding-block: 45px 40px;
+  }
+
+  .footer__socials-list {
+    gap: 10px;
+  }
+}
